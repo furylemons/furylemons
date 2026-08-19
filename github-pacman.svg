@@ -1,8 +1,6 @@
 <svg width="490" height="120" xmlns="http://www.w3.org/2000/svg">
   <style>
     .bg { fill: #0d1117; rx: 8px; }
-    .text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; fill: #58a6ff; font-weight: bold; }
-    .ghost { font-size: 20px; }
     @keyframes chomp {
       0% { d: path('M 0 0 L 12 12 A 15 15 0 1 0 12 -12 Z'); }
       50% { d: path('M 0 0 L 15 3 A 15 15 0 1 0 15 -3 Z'); }
@@ -19,21 +17,18 @@
   </style>
   
   <rect width="100%" height="100%" class="bg"/>
-  <text x="20" y="30" class="text">FuryLemons - Contribution Board</text>
   
-  <!-- Yemler -->
-  <circle cx="80" cy="70" r="4" class="dots" />
-  <circle cx="130" cy="70" r="4" class="dots" />
-  <circle cx="180" cy="70" r="4" class="dots" />
-  <circle cx="230" cy="70" r="4" class="dots" />
-  <circle cx="280" cy="70" r="4" class="dots" />
-  <circle cx="330" cy="70" r="4" class="dots" />
-  <circle cx="380" cy="70" r="4" class="dots" />
-  <circle cx="430" cy="70" r="4" class="dots" />
+  <circle cx="80" cy="60" r="4" class="dots" />
+  <circle cx="130" cy="60" r="4" class="dots" />
+  <circle cx="180" cy="60" r="4" class="dots" />
+  <circle cx="230" cy="60" r="4" class="dots" />
+  <circle cx="280" cy="60" r="4" class="dots" />
+  <circle cx="330" cy="60" r="4" class="dots" />
+  <circle cx="380" cy="60" r="4" class="dots" />
+  <circle cx="430" cy="60" r="4" class="dots" />
 
-  <!-- Pac-Man -->
   <g class="pacman-group">
-    <path fill="#f2e835" transform="translate(0, 70)" d="M 0 0 L 12 12 A 15 15 0 1 0 12 -12 Z">
+    <path fill="#f2e835" transform="translate(0, 60)" d="M 0 0 L 12 12 A 15 15 0 1 0 12 -12 Z">
       <animate attributeName="d" values="M 0 0 L 12 12 A 15 15 0 1 0 12 -12 Z; M 0 0 L 15 2 A 15 15 0 1 0 15 -2 Z; M 0 0 L 12 12 A 15 15 0 1 0 12 -12 Z" dur="0.3s" repeatCount="indefinite" />
     </path>
   </g>
