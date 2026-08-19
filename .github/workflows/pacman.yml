@@ -1,0 +1,28 @@
+name: Generate Pacman Animation
+
+on:
+  schedule:
+    - cron: "0 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Create pacman
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v4
+
+      - name: Create pacman
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: furylemons
+          template: classic
+          base: ""
+          plugin_pacman: yes
+          plugin_pacman_chart: yes
