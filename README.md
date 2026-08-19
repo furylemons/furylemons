@@ -23,3 +23,5 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/FuryLemons/FuryLemons/output/github-contribution-grid-snake.svg">
   <img alt="Snake Animation" src="https://raw.githubusercontent.com/FuryLemons/FuryLemons/output/github-contribution-grid-snake.svg">
 </picture>
+
+![Pacman Animation](https://raw.githubusercontent.com/FuryLemons/FuryLemons/main/github-pacman.svg)
