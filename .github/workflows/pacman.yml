@@ -10,19 +10,12 @@ permissions:
 
 jobs:
   build:
-    name: Create pacman
+    name: Create packman
     runs-on: ubuntu-latest
-    
-    steps:
-      - name: Clone repo
-        uses: actions/checkout@v4
 
-      - name: Create pacman
-        uses: lowlighter/metrics@latest
+    steps:
+      - name: Create packman and load
+        uses: felipefms/pacman-contribution-graph@v1
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          user: furylemons
-          template: classic
-          base: ""
-          plugin_pacman: yes
-          plugin_pacman_chart: yes
+          github_user_name: furylemons
+          output_filepath: github-pacman.svg
